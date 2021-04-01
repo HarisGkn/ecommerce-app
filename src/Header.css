@@ -1,5 +1,6 @@
 .header{
-    background-color: #44C1FF;
+    /* background-color: #44C1FF; */
+    background-color: #0b253e;
     display: flex;
     align-items: center;
     position: sticky;

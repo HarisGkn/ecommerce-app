@@ -7,6 +7,10 @@ import smartwatch from './img/smartwatch.jpg'
 import vintageTV from './img/vintageTV.jpg'
 import speakers from './img/speakers.jpg'
 import motherboard from './img/motherboard.jpg'
+import hdd from './img/hdd.jpg'
+import powerbank from './img/powerbank.jpg'
+import console from './img/console.jpg'
+import keyboard from './img/keyboard.jpg'
 import "./Home.css"
 
 
@@ -66,6 +70,36 @@ function Home(){
                     price={119.99}
                     rating={5}
                     image={motherboard}
+                />
+            </div>
+            <div className="home__row">
+                <Product
+                    id="000008"
+                    title="HDD"
+                    price={29.99}
+                    rating={4}
+                    image={hdd}
+                />
+                <Product
+                    id="000009"
+                    title="Powerbank"
+                    price={18.99}
+                    rating={3}
+                    image={powerbank}
+                />
+                <Product
+                    id="000010"
+                    title="Game Console"
+                    price={229.99}
+                    rating={5}
+                    image={console}
+                />
+                <Product
+                    id="000011"
+                    title="Keyboard"
+                    price={16.99}
+                    rating={2}
+                    image={keyboard}
                 />
             </div>
         </div>
