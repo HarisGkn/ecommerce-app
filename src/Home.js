@@ -97,7 +97,7 @@ function Home(){
                 <Product
                     id="000011"
                     title="Keyboard"
-                    price={16.99}
+                    price={17.99}
                     rating={2}
                     image={keyboard}
                 />
