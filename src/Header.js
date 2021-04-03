@@ -5,16 +5,24 @@ import './Header.css'
 import { Link } from 'react-router-dom'
 import logo from './img/logo.png'
 import { useStateValue } from './StateProvider'
+import { auth } from './firebase'
 
 function Header(){
 
-    const [{basket}, dispatch] = useStateValue();
+    const [{basket,loggedInUser}, dispatch] = useStateValue();
 
-    console.log("my basket", basket)
+    //console.log("my basket", basket)
+    const logoutUser = () => {
+        if(loggedInUser){
+            auth.signOut();
+        }
+    }
 
     return(
         <nav className="header">
+            <Link to="/">
             <img className="header__logo" src={logo} alt="logo" ></img>
+            </Link>
             <div className="header__search">
                 <input type="text" className="header__searchInput" />
                 <SearchIcon className="header__searchIcon" />
@@ -22,10 +30,10 @@ function Header(){
             </div>
             <div className="header__nav">
             {/* first link */}
-            <Link to="/" className="header__link">
-                <div className="header__option">
-                    <span className="header__optionLineOne">Hello, user</span>
-                    <span className="header__optionLineTwo">Sing In or Sign Out</span>
+            <Link to={!loggedInUser && "/login"} className="header__link">
+                <div onClick={logoutUser} className="header__option">
+                    <span className="header__optionLineOne">Hello, {loggedInUser?.email}</span>
+                    <span className="header__optionLineTwo">{loggedInUser ? 'Signout' : 'Sign in'}</span>
                 </div>
             </Link>
             {/* second link */}
