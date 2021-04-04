@@ -4,18 +4,16 @@
     min-height: 200px;
     color: whitesmoke;
 }
-.footerArea__top{
-    background-color: #102E4f;
-    min-height: 50px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
 .footerArea__links{
     width: 70%;
+    padding-top: 20px;
     margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+.footerArea__linkArea{
+    width: 33%;
+    padding: 0 50px;
 }
