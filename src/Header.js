@@ -32,8 +32,8 @@ function Header(){
             {/* first link */}
             <Link to={!loggedInUser && "/login"} className="header__link">
                 <div onClick={logoutUser} className="header__option">
-                    <span className="header__optionLineOne">Hello, {loggedInUser?.email}</span>
-                    <span className="header__optionLineTwo">{loggedInUser ? 'Signout' : 'Sign in'}</span>
+                    <span className="header__optionLineOne">Hello, {loggedInUser ? loggedInUser.email : 'guest'}</span>
+                    <span className="header__optionLineTwo">{loggedInUser ? 'Sign Out' : 'Sign In'}</span>
                 </div>
             </Link>
             {/* second link */}

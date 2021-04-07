@@ -4,4 +4,6 @@
 .checkout__button{
     padding: 8px;
     margin: 5px;
+    background-color: #715AFF;
+    border-color: #102E4A;
 }
