@@ -36,13 +36,6 @@ function Header(){
                     <span className="header__optionLineTwo">{loggedInUser ? 'Sign Out' : 'Sign In'}</span>
                 </div>
             </Link>
-            {/* second link */}
-            <Link to="/" className="header__link">
-                <div className="header__option">
-                    <span className="header__optionLineOne">Your</span>
-                    <span className="header__optionLineTwo">orders</span>
-                </div>
-            </Link>
             
             </div>
             {/* basket icon(also displays number of items) */}

@@ -53,7 +53,7 @@ function Payment() {
                         <h3>Payment Method</h3>
                     </div>
                     <div className='payment__details'>
-
+                        <h3>Would normally use Stripe for this, but since the app is only a portfolio project i won't</h3>
                     </div>
                 </div>
 

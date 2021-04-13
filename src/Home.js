@@ -14,6 +14,8 @@ import keyboard from './img/keyboard.jpg'
 import "./Home.css"
 
 
+alert("this app was developed as a portfolio project and also so I could practice my react skills")
+
 function Home(){
     return(
         <div className="home">
